@@ -1,3 +1,22 @@
+#Simple Method
+#Check whether a character is vowel or consonant or a digit.
+char = input("Enter a character: ")
+
+if len(char) == 1:
+    if char.isalpha(): #checking alphabet
+        if char.lower() in "aeiou": #converting in lower and checking
+            print("The given character is a vowel.")
+        else:
+            print("The given character is a consonat.")
+    elif char.isdigit():
+        print("The given character is a digit.")
+    else:
+        print("The given character is neither a letter nor a digit.")
+else:
+    print("Enter a single character.")
+        
+    
+        
 
 
 #Lengthy Method
@@ -12,7 +31,3 @@ if len(char) == 1:
         print("The given character is consonant.")
 else:
     print("Enter single character.")
-    
-#Also need to specify this
-# if char == int:
-#     print("Enter string.")
